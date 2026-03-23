@@ -1,6 +1,5 @@
 import Image from "next/image"
 import { burgers } from "../../data/burgers"
-import { Carousel } from "@material-tailwind/react";
 
 export default function Burgers(){
     return(

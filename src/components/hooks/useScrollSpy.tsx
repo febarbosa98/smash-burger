@@ -1,7 +1,8 @@
+"use client"
 import { useEffect, useState } from "react";
 
-export function useScrollSpy(sectionIds, offset = 100) {
-  const [activeSection, setActiveSection] = useState("");
+export function useScrollSpy(sectionIds: string[], offset: number = 100) {
+  const [activeSection, setActiveSection] = useState<string>("");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -19,7 +20,8 @@ export function useScrollSpy(sectionIds, offset = 100) {
     };
 
     window.addEventListener("scroll", handleScroll);
-    handleScroll(); // inicial
+    handleScroll();
+
     return () => window.removeEventListener("scroll", handleScroll);
   }, [sectionIds, offset]);
 
