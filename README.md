@@ -1,4 +1,4 @@
-# Smart Burger
+# Smash Burger
 
 Landing page institucional para uma hamburgueria, desenvolvida com Next.js, React, TypeScript e Tailwind CSS. O projeto apresenta a marca, destaca os burgers mais pedidos, lista unidades, exibe depoimentos de clientes e oferece uma área de contato.
 
