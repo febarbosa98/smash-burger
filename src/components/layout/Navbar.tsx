@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-html-link-for-pages */
 'use client'
 import Image from "next/image"
 import { useEffect, useState } from "react";
@@ -33,8 +34,9 @@ export default function Navbar() {
   return (
     <header className="border-b border-white/10 bg-zinc-900 sticky w-full z-10 top-0 h-25  ">
       <div className="container flex items-center justify-between  ">
+        <a href="/">
         <Image src="/img/logo2.png" alt="logo2 do smash Burger" width={100} height={50} />
-
+        </a>
        <button
           onClick={() => setIsOpen(!isOpen)}
           className="md:hidden focus:outline-none"
@@ -55,7 +57,7 @@ export default function Navbar() {
 
 
                 {/* Links desktop */}
-        <nav className="hidden md:flex gap-8 text-sm">
+        <nav className="hidden md:flex gap-8 text-lg">
           {sectionIds.map((id) => (
             <a
               key={id}
@@ -64,7 +66,7 @@ export default function Navbar() {
             >
               {id === "hero" ? "Início" :
                id === "about" ? "Sobre" :
-               id === "burgers" ? "Burgers" :
+               id === "burgers" ? "Cardapio" :
                id === "units" ? "Unidades" :
                id === "reviews" ? "Avaliações" :
                "Contato"}
@@ -73,7 +75,7 @@ export default function Navbar() {
         </nav>
 
         {/* Botão de ação */}
-        <a href="#units" className="button-orange px-4 py-2 text-sm hidden md:inline-block">
+        <a href="#units" className="button-orange px-4 py-2 text-lg hidden md:inline-block">
           Peça agora
         </a>
       </div>
@@ -90,7 +92,7 @@ export default function Navbar() {
             >
               {id === "hero" ? "Início" :
                id === "about" ? "Sobre" :
-               id === "burgers" ? "Burgers" :
+               id === "burgers" ? "Cardapio" :
                id === "units" ? "Unidades" :
                id === "reviews" ? "Avaliações" :
                "Contato"}

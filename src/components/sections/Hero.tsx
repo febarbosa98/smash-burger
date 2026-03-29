@@ -3,15 +3,16 @@ import { ButtonOrange, ButtonWhite } from "@/src/ui/buttom"
 
 export default function Hero() {
   return (
-    <section className="py-16 md:py-28 scroll-mt-25" id="hero">
+    <section className="flex scroll-mt-25 h-svh heroBackground " id="hero">
       <div className="container grid md:grid-cols-2 gap-12 items-center">
+      {/* <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-black/60" /> */}
 
-        <div className="space-y-6 text-center md:text-left ">
-          <h2 className="text-4xl md:text-6xl font-bold leading-tight">
-            O hambúrguer que vale a saída de casa
+        <div className="space-y-6 text-center md:text-left relative z-2 ">
+          <h2 className="text-4xl md:text-7xl font-bold leading-tight">
+            O hambúrguer que  vale a <span className="text-orange-500">saída de casa</span>
           </h2>
 
-          <p className="text-white/70">
+          <p className="text-white/70 text-2xl">
             Hambúrguer artesanal, pão selado na manteiga e ingredientes frescos todos os dias.
           </p>
 

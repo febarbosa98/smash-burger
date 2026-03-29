@@ -31,8 +31,12 @@ export default function Contact() {
     };
 
     return (
-        <section className="contact py-16 md:py-28 mb-20 scroll-mt-25" id="contact">
-            <div className="container grid md:grid-cols-2 gap-12 items-center">
+        <section className="contact py-16 md:py-28  scroll-mt-25 relative" id="contact">
+
+            <div className="absolute inset-0 bg-[url('/img/bg-texture.png')] bg-cover bg-center  will-change-transform"  />
+            <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-black/60" />
+
+            <div className="container grid md:grid-cols-2 gap-12 items-center relative z-2">
 
               <div className="relative w-full h-[320px] md:h-[520px] ">
                       <Image
@@ -44,7 +48,7 @@ export default function Contact() {
                         />
                  </div>
              <div className=" bg-zinc-800 p-8 rounded-lg shadow-lg h-autonp md:h-[522px] ">
-                <h2 className="text-2xl font-bold text-orange-500 text-center mb-6">Entre em Contato</h2>
+                <h2 className="text-2xl  text-orange-500 text-center mb-6">Entre em Contato</h2>
                 
                 {submitted && <p className="success-message text-green-400">Mensagem enviada com sucesso!</p>}
                 

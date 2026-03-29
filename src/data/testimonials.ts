@@ -1,12 +1,12 @@
 export const testimonials = [
   {
    
-    name: "gustavo",
+    name: "Guilherme",
     description: "Ótima opção para quem busca um hambúrguer artesanal de qualidade.",
     date: "2024-06-01",
 },
   {    
-    name: "afonso",
+    name: "Amanda",
     description: "Ótima opção para quem busca um hambúrguer artesanal de qualidade.",
     date: "2024-06-01",
   },
@@ -18,7 +18,7 @@ export const testimonials = [
   },
 
   {    
-    name: "afonso",
+    name: "Fernando",
     description: "Ótima opção para quem busca um hambúrguer artesanal de qualidade.",
     date: "2024-06-01",
   },
